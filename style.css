@@ -1,0 +1,334 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  overflow: hidden;
+  font-family: "Bree Serif", serif;
+}
+.gameContainer {
+  background-size: cover;
+  background-image: url(bg.png);
+  width: 100%;
+  background-size: 100vw 100vh;
+  height: 100vh;
+}
+.dino {
+  background-size: cover;
+  background-image: url(dino.png);
+  height: 114px;
+  width: 224px;
+  position: absolute;
+  bottom: 0px;
+  left: 10vw;
+}
+.obstacle {
+  background-size: cover;
+  background-image: url(dragon.png);
+  height: 108px;
+  width: 160px;
+  position: absolute;
+  bottom: 0px;
+  left: 60vw;
+}
+.scoreCount {
+  font-size: 1.3rem;
+  position: absolute;
+  border: 2px solid rgb(39, 44, 33);
+  border-radius: 5px;
+  width: 180px;
+  padding: 2px;
+  height: 30px;
+  color: rgb(39, 44, 33);
+  position: absolute;
+  right: 10vw;
+  top: 5vh;
+}
+.animateDino {
+  animation: dino 0.7s linear;
+}
+@keyframes dino {
+  0% {
+    bottom: 0px;
+  }
+  50% {
+    bottom: 423px;
+  }
+  100% {
+    bottom: 0px;
+  }
+}
+.obstacleani {
+  animation: obstacleani 5s linear infinite;
+}
+@keyframes obstacleani {
+  0% {
+    left: 100vw;
+  }
+  100% {
+    left: -10vw;
+  }
+}
+.gameOver {
+  /* display: block; */
+  visibility: visible;
+
+  position: absolute;
+  /* border-radius: 20px solid transparent; */
+  top: 15vh;
+  left: 32vw;
+  font-size: 2rem;
+  box-shadow: 15px 18px 32px #fff;
+}
+@media all and (max-width: 1042px) {
+  .gameOver {
+    visibility: visible;
+    position: absolute;
+    top: 10vh;
+    left: 23vw;
+    font-size: 2rem;
+    box-shadow: 15px 18px 32px #fff;
+  }
+
+  .dino {
+    background-size: cover;
+    background-image: url(dino.png);
+    height: 92px;
+    width: 185px;
+    position: absolute;
+    bottom: 0px;
+    left: 10vw;
+  }
+  .obstacle {
+    background-size: cover;
+    background-image: url(dragon.png);
+    height: 89px;
+    width: 132px;
+    position: absolute;
+    bottom: 0px;
+    left: 60vw;
+  }
+  .scoreCount {
+    font-size: 1.3rem;
+    position: absolute;
+    border: 2px solid rgb(39, 44, 33);
+    border-radius: 5px;
+    width: 144px;
+    padding: 2px;
+    height: 30px;
+    color: rgb(39, 44, 33);
+    position: absolute;
+    right: 39vw;
+    top: 2vh;
+  }
+}
+@media all and (max-width: 829px) {
+  .gameOver {
+    visibility: visible;
+    position: absolute;
+    top: 10vh;
+    left: 30vw;
+    font-size: 1.4rem;
+    box-shadow: 15px 18px 32px #fff;
+  }
+
+  .dino {
+    background-size: cover;
+    background-image: url(dino.png);
+    height: 114px;
+    width: 224px;
+    position: absolute;
+    bottom: 0px;
+    left: 10vw;
+  }
+  .obstacle {
+    background-size: cover;
+    background-image: url(dragon.png);
+    height: 108px;
+    width: 160px;
+    position: absolute;
+    bottom: 0px;
+    left: 60vw;
+  }
+  .scoreCount {
+    font-size: 1.3rem;
+    position: absolute;
+    border: 2px solid rgb(39, 44, 33);
+    border-radius: 5px;
+    width: 144px;
+    padding: 2px;
+    height: 30px;
+    color: rgb(39, 44, 33);
+    position: absolute;
+    right: 39vw;
+    top: 2vh;
+  }
+}
+@media all and (max-width: 1042px) {
+  .gameOver {
+    visibility: visible;
+    position: absolute;
+    top: 10vh;
+    left: 30vw;
+    font-size: 2rem;
+    box-shadow: 15px 18px 32px #fff;
+  }
+
+  .dino {
+    background-size: cover;
+    background-image: url(dino.png);
+    height: 92px;
+    width: 185px;
+    position: absolute;
+    bottom: 0px;
+    left: 10vw;
+  }
+  .obstacle {
+    background-size: cover;
+    background-image: url(dragon.png);
+    height: 89px;
+    width: 132px;
+    position: absolute;
+    bottom: 0px;
+    left: 60vw;
+  }
+  .scoreCount {
+    font-size: 1.3rem;
+    position: absolute;
+    border: 2px solid rgb(39, 44, 33);
+    border-radius: 5px;
+    width: 144px;
+    padding: 2px;
+    height: 30px;
+    color: rgb(39, 44, 33);
+    position: absolute;
+    right: 39vw;
+    top: 2vh;
+  }
+}
+@media all and (max-width: 829px) {
+  .gameOver {
+    visibility: visible;
+    position: absolute;
+    top: 10vh;
+    left: 30vw;
+    font-size: 1.4rem;
+    box-shadow: 15px 18px 32px #fff;
+  }
+
+  ..dino {
+    background-size: cover;
+    background-image: url(dino.png);
+    height: 92px;
+    width: 185px;
+    position: absolute;
+    bottom: 0px;
+    left: 10vw;
+  }
+  .obstacle {
+    background-size: cover;
+    background-image: url(dragon.png);
+    height: 89px;
+    width: 132px;
+    position: absolute;
+    bottom: 0px;
+    left: 60vw;
+  }
+  .scoreCount {
+    font-size: 1.3rem;
+    position: absolute;
+    border: 2px solid rgb(39, 44, 33);
+    border-radius: 5px;
+    width: 144px;
+    padding: 2px;
+    height: 30px;
+    color: rgb(39, 44, 33);
+    position: absolute;
+    right: 39vw;
+    top: 2vh;
+  }
+}
+@media all and (max-width: 577px) {
+  .gameOver {
+    visibility: visible;
+    position: absolute;
+    top: 10vh;
+    left: 18vw;
+    font-size: 1.4rem;
+    box-shadow: 15px 18px 32px #fff;
+  }
+
+  .dino {
+    background-size: cover;
+    background-image: url(dino.png);
+    height: 70px;
+    width: 144px;
+    position: absolute;
+    bottom: 0px;
+    left: 7vw;
+  }
+  .obstacle {
+    background-size: cover;
+    background-image: url(dragon.png);
+    height: 64px;
+    width: 92px;
+    position: absolute;
+    bottom: 0px;
+    left: 60vw;
+  }
+  .scoreCount {
+    font-size: 1.3rem;
+    position: absolute;
+    border: 2px solid rgb(39, 44, 33);
+    border-radius: 5px;
+    width: 144px;
+    padding: 2px;
+    height: 30px;
+    color: rgb(39, 44, 33);
+    position: absolute;
+    right: 39vw;
+    top: 2vh;
+  }
+}
+@media all and (max-width: 376px) {
+  .gameOver {
+    visibility: visible;
+    position: absolute;
+    top: 10vh;
+    left: 4vw;
+    font-size: 1.4rem;
+    box-shadow: 15px 18px 32px #fff;
+  }
+
+  .dino {
+    background-size: cover;
+    background-image: url(dino.png);
+    height: 56px;
+    width: 112px;
+    position: absolute;
+    bottom: 0px;
+    left: 10vw;
+  }
+  .obstacle {
+    background-size: cover;
+    background-image: url(dragon.png);
+    height: 53px;
+    width: 80px;
+    position: absolute;
+    bottom: 0px;
+    left: 60vw;
+  }
+  .scoreCount {
+    font-size: 1.3rem;
+    position: absolute;
+    border: 2px solid rgb(39, 44, 33);
+    border-radius: 5px;
+    width: 144px;
+    padding: 1px;
+    height: 27px;
+    color: rgb(39, 44, 33);
+    position: absolute;
+    right: 32vw;
+    top: 2vh;
+  }
+}
